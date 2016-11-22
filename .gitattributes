@@ -1,0 +1,7 @@
+# Run the following commands to set up your git environment to properly diff *.strings which are UTF-16 encoded
+#
+#    git config diff.localizablestrings.textconv "iconv -f utf-16 -t utf-8"
+#    git config diff.localizablestrings.binary false
+#
+
+*.strings diff=localizablestrings
